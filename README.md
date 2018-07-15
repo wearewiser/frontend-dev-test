@@ -1,27 +1,13 @@
-# FrontendDevTest
+![Alt Wiser](https://wearewiser.com/assets/images/wiser-logo/wiser-purple.svg)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+# Frontend Developer Test
 
-## Development server
+## About This Test
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+This test is for a frontend developer position with Wiser. This will test your knowlege of the Angular framework, API usage, programming practices, written skills, and TDD and code coverage. Fork this test to provide solutions. When complete, email a repository link to engineering@wearewiser.com.
 
-## Code scaffolding
+Please commit your answers regularly. There is no time limit, though we will be looking at the commit metrics. We will be looking for DRY code and good coding practices with high code coverage. Update the README to explain the code-base.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## The Test
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+TODO
