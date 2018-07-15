@@ -1,0 +1,16 @@
+#.travis.yml
+
+language: node_js
+node_js:
+  - "8.9"
+
+jobs:
+    include:
+      - stage: Linting
+        script: npm run lint
+      - stage: Unit Tests
+        script: npm run test -- --browser=PhantomJS --watch=false
+      - stage: Test Coverage
+        script: npm run coverage
+      - stage: AOT Build
+        script: npm run build -- --prod --aot
