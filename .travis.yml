@@ -10,5 +10,7 @@ jobs:
         script: npm run lint
       - stage: Unit Tests
         script: npm run test -- --browser=PhantomJS --watch=false
+      - stage: Test Coverage
+        script: npm run coverage
       - stage: AOT Build
         script: npm run build -- --prod --aot
