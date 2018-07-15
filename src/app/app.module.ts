@@ -10,6 +10,14 @@ const routes: Routes = [
     {
         path: '',
         component: HomeComponent
+    },
+    {
+        path: 'error/:status_code',
+        component: ErrorComponent
+    },
+    {
+        path: '**',
+        redirectTo: 'error/404'
     }
 ];
 
