@@ -8,7 +8,8 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "coverage": "npm run test -- --browser=PhantomJS --watch=false --cc && node ./node_modules/lcov-parse/bin/cli.js ./coverage/lcov.info | node expected-coverage.js"
   },
   "private": true,
   "dependencies": {
