@@ -8,12 +8,12 @@ try {
     const found = lcov_data[0].lines.found;
     const hit = lcov_data[0].lines.hit;
     const coverage = hit / found * 100;
-    if(coverage < expected) {
+    if (coverage < expected) {
         throw new Error(`Fail! Expected ${expected}% coverage. Actual coverage was ${coverage}%.`);
     }
-    console.info(`Passing with ${coverage}% coverage.`);
+    console.info(`\x1b[0mPassing with \x1b[32m${coverage}%\x1b[0m coverage.`);
     return 0;
-} catch(e) {
-    console.error(e);
+} catch (e) {
+    console.error("\x1b[31m",e);
     return 1;
 }
