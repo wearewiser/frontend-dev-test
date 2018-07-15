@@ -6,8 +6,6 @@ node_js:
 
 jobs:
     include:
-      - stage: Dependencies
-        script: npm install
       - stage: Linting
         script: npm run lint
       - stage: Unit Tests
