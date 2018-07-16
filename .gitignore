@@ -8,6 +8,7 @@
 
 # dependencies
 /node_modules
+/packages/*.tar.gz
 
 # IDEs and editors
 /.idea
