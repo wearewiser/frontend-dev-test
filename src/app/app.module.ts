@@ -6,6 +6,7 @@ import { HttpStatusModule } from 'http-status-pipe';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ErrorComponent } from './pages/error/error.component';
+import { NavbarComponent } from './partials/navbar/navbar.component';
 
 const routes: Routes = [
     {
@@ -27,7 +28,8 @@ const routes: Routes = [
     declarations: [
         AppComponent,
         HomeComponent,
-        ErrorComponent
+        ErrorComponent,
+        NavbarComponent
     ],
     imports: [
         BrowserModule,
