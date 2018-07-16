@@ -15,5 +15,11 @@
       "es2017",
       "dom"
     ]
-  }
+  },
+  "include": [
+      "src/main.ts",
+      "src/polyfill.ts",
+      "node_modules/stub",
+      "node_modules/common"
+  ]
 }
