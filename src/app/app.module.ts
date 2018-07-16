@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpStatusModule } from 'http-status-pipe';
+import { AuthService } from 'stub';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -36,7 +37,9 @@ const routes: Routes = [
         RouterModule.forRoot(routes),
         HttpStatusModule
     ],
-    providers: [],
+    providers: [
+        AuthService
+    ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
