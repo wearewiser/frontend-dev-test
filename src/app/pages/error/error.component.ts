@@ -36,7 +36,6 @@ export class ErrorComponent implements OnInit, OnDestroy {
                 throw new Error(`Status code ${params.status_code} is NaN`);
             }
         } catch (e) {
-            console.error(e);
             status_code = 421;
         } finally {
             this.status_code = status_code;
