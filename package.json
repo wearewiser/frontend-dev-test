@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "preinstall": "rm -rf packages/*.tar.gz && tar -C packages/stub-0.0.0/ -czf packages/stub-0.0.0.tar.gz ./ && tar -C packages/common-0.0.0/ -czf packages/common-0.0.0.tar.gz ./",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
@@ -22,9 +23,13 @@
     "@angular/platform-browser": "^5.2.0",
     "@angular/platform-browser-dynamic": "^5.2.0",
     "@angular/router": "^5.2.0",
+    "common": "file:packages/common-0.0.0.tar.gz",
     "core-js": "^2.4.1",
+    "http-status-pipe": "0.0.1",
     "lcov-parse": "^1.0.0",
     "rxjs": "^5.5.6",
+    "stub": "file:packages/stub-0.0.0.tar.gz",
+    "w3-css": "^4.1.0",
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
