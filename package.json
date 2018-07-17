@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "preinstall": "rm -rf packages/*.tar.gz && GZIP=-n tar -C packages/stub-0.0.0/ -czf packages/stub-0.0.0.tar.gz ./ && GZIP=-n tar -C packages/common-0.0.0/ -czf packages/common-0.0.0.tar.gz ./",
+    "preinstall": "rm -rf packages/*.tar.gz && GZIP=-n tar -C packages/stub-0.0.0/ -czf packages/stub-0.0.0.tar.gz ./ && GZIP=-n tar -C packages/common-0.0.0/ -czf packages/common-0.0.0.tar.gz ./ && npm install --save ./packages/common-0.0.0.tar.gz ./packages/stub-0.0.0.tar.gz",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build --prod",
