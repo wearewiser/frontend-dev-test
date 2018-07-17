@@ -3,5 +3,5 @@
     <a routerLink="/auth/login" class="w3-bar-item w3-button w3-mobile" *ngIf="!authenticated">Login</a>
     <a routerLink="/secure" class="w3-bar-item w3-button w3-mobile" *ngIf="authenticated">Secure</a>
     <a routerLink="/auth/logout" class="w3-bar-item w3-button w3-mobile" *ngIf="authenticated">Logout</a>
-    <span class="w3-bar-item w3-right" *ngIf="authenticated">Welcome, Johnny{{this.name}}</span>
+    <span class="w3-bar-item w3-right" *ngIf="authenticated">Welcome, {{this.name}}</span>
 </div>
