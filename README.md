@@ -94,3 +94,19 @@ curl -X GET https://dev-test-service.madebywiser.com/login -u wiserdev:password
 > _**Figure 1**_
 >
 > Testing credentials against the API using cURL.
+
+
+### Bonus Points
+
+Below is a list of ideas that can earn you bonus points - feel free to be creative, as this is not a comprehensive list (_List 2_).
+
+- Inactivity timeout with redirect to `/auth/logout`
+- Multiple well thought out child pages to `/secure`.
+- PWA feature support
+- Additional animations or creative design
+
+> _**List 2**_
+>
+> Bonus point ideas.
+
+Please note that the core requirements are far more important than any possible bonus points. Please spend your time ensuring you've met the outcome goals before embarking on any additiona features.
