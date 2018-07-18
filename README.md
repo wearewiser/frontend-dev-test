@@ -126,7 +126,7 @@ Please note that the core requirements are far more important than any possible 
 
 ### Project Demo
 
-A demo of the project can be seen [here](https://demo.madebywiser.com). You can use the credentials outline above to authenticate (_Table 4_).
+A completed demo of the project can be seen [here](https://demo.madebywiser.com). You can use the credentials outline above to authenticate (_Table 4_).
 
 ### Submission
 
