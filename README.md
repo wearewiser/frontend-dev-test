@@ -36,3 +36,61 @@ The following table describes what we will be looking for in the test (_Table 1_
 >
 > Outcome Goals - Goals we wish to see you demonstrate throughout the course of your test.
 
+### Project Outline
+
+You will be makeing an authenticated application. The application will require at least three pages (_Table 2_). There will be some restrictions below on the functionallity of the authentication pieces, however, you are free to make your own design choices regarding these pages, and you are free to add any content you wish in the secure page(s).
+
+| Page   | Route        | Description                                                                                                 |
+| :----- | :----------- | :---------------------------------------------------------------------------------------------------------- |
+| Login  | /auth/login  | Must play an animation on a failed login attempt. Redirect to `/secure` on success.                         |
+| Logout | /auth/logout | Once accessed, the session is purged of any state and the user is redirected to `/auth/login` after 1500ms. |
+| Secure | /secure/**   | Must be authenticated. Should be able to access on refresh. Free to make own content/design choices.        |
+
+> _**Table 2**_
+>
+> Required pages to be implemented.
+
+Please note that we will require that a notification animation play on a failed login attempt - this must be choreographed with Angular animations framework. Finally, the secure route must be guarded against access using an authentication guard; the guard must be used to determine the validity of the access token each time a secure page is accessed _**HINT**: Access tokens expire, so always verify them against the API_.
+
+The authentication pages and the secure page(s) will live in two distinct application modules. These two modules will be required to be loaded using lazy loading. They should not require any code from any of the other modules - that is, the authentication module should not require code from the secure module or the _AppModule_, and the secure module should not require any code from the authentication module or the _AppModule_. Only a select number of files in the AppModule should be edited in order to complete this task, and no logic should change within these select files - no other files should be edited outside from the modules you will be defining (_List 1_).
+
+- navbar.component.ts
+- navbar.component.spec.ts
+- environment.ts
+- environment.prod.ts
+- app.component.spec.ts
+- app.module.ts
+
+> _**List 1**_
+>
+> Existing files may be modified.
+
+You have been provided with an API to which you will make requests against (_Table 3_). This API provides single user authentication functionallity, using basic authentication. You are provided with the credentials necessary to authenticate (_Table 4_). You can test these authentication credentials using bash (_Figure 1_).
+
+| Endpoint | Route                                          | Description                                                                                          | cURL                                                                                      |
+| :------: | :--------------------------------------------- | :--------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------- |
+| Ping     | https://dev-test-service.madebywiser.com/ping  | Probably useless for this project. Can be used for sanity during development.                        | `curl -X GET https://dev-test-service.madebywiser.com/ping`                               |
+| Login    | https://dev-test-service.madebywiser.com/login | Will return an plaintext access token on successful basic authentication.                            | `curl -X GET https://dev-test-service.madebywiser.com/login -u <username>:<password>`     |
+| Me       | https://dev-test-service.madebywiser.com/me    | Will return a `{username: string, expires: number}` object on JWT authentication with a valid token. | `curl -X GET https://dev-test-service.madebywiser.com/me -H 'Authorization: JWT <token>'` |
+
+> _**Table 3**_
+>
+> Available API for authentication.
+
+|          |            |
+| :------: | :--------: |
+| username | _wiserdev_ |
+| password | _password_ |
+
+
+> _**Table 4**_
+>
+> Authentication credentials.
+
+```bash
+curl -X GET https://dev-test-service.madebywiser.com/login -u wiserdev:password
+```
+
+> _**Figure 1**_
+>
+> Testing credentials against the API using cURL.
