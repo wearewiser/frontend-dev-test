@@ -60,6 +60,7 @@ The authentication pages and the secure page(s) will live in two distinct applic
 - environment.prod.ts
 - app.component.spec.ts
 - app.module.ts
+- README.md
 
 > _**List 1**_
 >
@@ -114,4 +115,3 @@ Please note that the core requirements are far more important than any possible 
 ### Project Demo
 
 A demo of the project can be seen [here](https://demo.madebywiser.com). You can use the credentials outline above to authenticate (_Table 4_).
-
