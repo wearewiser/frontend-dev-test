@@ -110,3 +110,8 @@ Below is a list of ideas that can earn you bonus points - feel free to be creati
 > Bonus point ideas.
 
 Please note that the core requirements are far more important than any possible bonus points. Please spend your time ensuring you've met the outcome goals before embarking on any additiona features.
+
+### Project Demo
+
+A demo of the project can be seen [here](https://demo.madebywiser.com). You can use the credentials outline above to authenticate (_Table 4_).
+
