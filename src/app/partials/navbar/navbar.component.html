@@ -1,0 +1,7 @@
+<div class="w3-bar w3-light-grey">
+    <a class="w3-bar-item w3-button" routerLinkActive="active" routerLink="/" [routerLinkActiveOptions]='{exact:true}'>Home</a>
+    <a class="w3-bar-item w3-button" routerLinkActive="active" routerLink="/auth/login" *ngIf="!authenticated">Login</a>
+    <a class="w3-bar-item w3-button" routerLinkActive="active" routerLink="/secure" *ngIf="authenticated">Secure</a>
+    <a class="w3-bar-item w3-button" routerLinkActive="active" routerLink="/auth/logout" *ngIf="authenticated">Logout</a>
+    <span class="w3-bar-item w3-right" *ngIf="authenticated">Welcome, {{this.name}}</span>
+</div>
