@@ -25,6 +25,8 @@ The following table describes what we will be looking for in the test (_Table 1_
 | Application modules    | Modules used to define a group of related view components that are loaded as a bundle. |
 | Shared modules         | Modules used to define a group of related shared services, pipes, components, ect.     |
 | HttpClient             | Module for making Http calls (AJAX) from the application.                              |
+| Angular Forms          | Angular forms module for handling data binding across form elements.                   |
+| Angular Animations     | Angular animation framework for coordinating animation events on triggers.             |
 | RxJS/async data        | Handling async data elegantly (error handling, cleaned up subscriptions, ect. ).       |
 | Structured directories | File and directory organization.                                                       |
 | Coding practices       | Make use of _best practices_ (code reusability, readability, ect).                     |
