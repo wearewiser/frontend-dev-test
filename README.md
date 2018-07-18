@@ -96,17 +96,27 @@ curl -X GET https://dev-test-service.madebywiser.com/login -u wiserdev:password
 >
 > Testing credentials against the API using cURL.
 
+Finally, note that we will be running automated testing against the code base (_List 2_). Please ensure that your code passes all these tests.
+
+- `npm run lint`
+- `npm run test -- --browser=PhantomJS --watch=false`
+- `npm run coverage`
+- `npm run build -- --prod --aot`
+
+> _**List 2**_
+>
+> Quality assurance scripts that will be run by continuous integration.
 
 ### Bonus Points
 
-Below is a list of ideas that can earn you bonus points - feel free to be creative, as this is not a comprehensive list (_List 2_).
+Below is a list of ideas that can earn you bonus points - feel free to be creative, as this is not a comprehensive list (_List 3_).
 
 - Inactivity timeout with redirect to `/auth/logout`
 - Multiple well thought out child pages to `/secure`.
 - PWA feature support
 - Additional animations or creative design
 
-> _**List 2**_
+> _**List 3**_
 >
 > Bonus point ideas.
 
@@ -118,16 +128,7 @@ A demo of the project can be seen [here](https://demo.madebywiser.com). You can 
 
 ### Submission
 
-Firstly, please ensure you have a well structured README.md file that explains your project. Please ensure that you have followed all the instructions, and that all the quality assurance tests pass (_List 3_). 
-
-- `npm run lint`
-- `npm run test -- --browser=PhantomJS --watch=false`
-- `npm run coverage`
-- `npm run build -- --prod --aot`
-
-> _**List 3**_
->
-> Quality assurance scripts that will be run by continuous integration.
+Firstly, please ensure you have a well structured README.md file that explains your project. Please ensure that you have followed all the instructions, and that all the quality assurance tests pass (_List 3_).
 
 Once you are ready to submit your code, open a merge request from your forked repository back into the [source repo](https://github.com/wearewiser/frontend-dev-test) on the _master_ branch. You can see the automated CI testing [here](https://travis-ci.org/wearewiser/frontend-dev-test/pull_requests). Finally, send us an email at engineering@wearewiser.com to let us know about the awesome thing you built!
 
