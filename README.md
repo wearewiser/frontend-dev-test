@@ -130,7 +130,7 @@ A demo of the project can be seen [here](https://demo.madebywiser.com). You can 
 
 ### Submission
 
-Firstly, please ensure you have a well structured README.md file that explains your project. Please ensure that you have followed all the instructions, and that all the quality assurance tests pass (_List 3_).
+Firstly, please ensure you have a well structured README.md file that explains your project. Please ensure that you have followed all the instructions, and that all the quality assurance tests pass (_List 2_).
 
 Once you are ready to submit your code, open a merge request from your forked repository back into the [source repo](https://github.com/wearewiser/frontend-dev-test) on the _master_ branch. You can see the automated CI testing [here](https://travis-ci.org/wearewiser/frontend-dev-test/pull_requests). Finally, send us an email at engineering@wearewiser.com to let us know about the awesome thing you built!
 
