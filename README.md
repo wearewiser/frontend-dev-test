@@ -115,3 +115,20 @@ Please note that the core requirements are far more important than any possible 
 ### Project Demo
 
 A demo of the project can be seen [here](https://demo.madebywiser.com). You can use the credentials outline above to authenticate (_Table 4_).
+
+### Submission
+
+Firstly, please ensure you have a well structured README.md file that explains your project. Please ensure that you have followed all the instructions, and that all the quality assurance tests pass (_List 3_). 
+
+- `npm run lint`
+- `npm run test -- --browser=PhantomJS --watch=false`
+- `npm run coverage`
+- `npm run build -- --prod --aot`
+
+> _**List 3**_
+>
+> Quality assurance scripts that will be run by continuous integration.
+
+Once you are ready to submit your code, open a merge request from your forked repository back into the [source repo](https://github.com/wearewiser/frontend-dev-test) on the _master_ branch. You can see the automated CI testing [here](https://travis-ci.org/wearewiser/frontend-dev-test/pull_requests). Finally, send us an email at engineering@wearewiser.com to let us know about the awesome thing you built!
+
+_Have fun!_
