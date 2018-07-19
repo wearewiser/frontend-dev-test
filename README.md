@@ -52,8 +52,6 @@ You will be makeing an authenticated application. The application will require a
 >
 > Required pages to be implemented.
 
-Please note that we will require that a notification animation play on a failed login attempt - this must be choreographed with Angular animations framework. Finally, the secure route must be guarded against access using an authentication guard; the guard must be used to determine the validity of the access token each time a secure page is accessed _**HINT**: Access tokens expire, so always verify them against the API_.
-
 The authentication pages and the secure page(s) will live in two distinct application modules. These two modules will be required to be loaded using lazy loading. They should not require any code from any of the other modules - that is, the authentication module should not require code from the secure module or the _AppModule_, and the secure module should not require any code from the authentication module or the _AppModule_. Only a select number of files in the AppModule should be edited in order to complete this task, and no logic should change within these select files - no other files should be edited outside from the modules you will be defining (_List 1_).
 
 - navbar.component.ts
@@ -67,6 +65,8 @@ The authentication pages and the secure page(s) will live in two distinct applic
 > _**List 1**_
 >
 > Existing files may be modified.
+
+Please note that we will require that a notification animation play on a failed login attempt - this must be choreographed with Angular animations framework. Finally, the secure route must be guarded against access using an authentication guard; the guard must be used to determine the validity of the access token each time a secure page is accessed _**HINT**: Access tokens expire, so always verify them against the API_.
 
 You have been provided with an API to which you will make requests against (_Table 3_). This API provides single user authentication functionallity, using basic authentication. You are provided with the credentials necessary to authenticate (_Table 4_). You can test these authentication credentials using bash (_Figure 1_).
 
